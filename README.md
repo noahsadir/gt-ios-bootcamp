@@ -1,8 +1,9 @@
-# GT iOS Club Bootcamp
+# Bootcamp - GT iOS Club
 
 This repo contains everything you need to get started with iOS development!
 
-We designed this with beginners in mind, though many of the resources.
+We designed this with beginners in mind, though many of the resources are
+still helpful for more intermediate learners.
 
 ## Prerequisite Courses
 
