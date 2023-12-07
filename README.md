@@ -123,7 +123,14 @@ ruin the whole project.
 
 ## Pushing
 
+_Note_: This is a risky operation. Make sure you're on the right branch!
+
 1. Click on `Integrate` in the top menu bar and select `Push...`
+
+2. You should see a pop-up that says `Push local changes to:`
+   along with the remote branch.
+
+3. Click `Push`. Hopefully, Xcode won't crash at this point.
 
 - [x] Push branch
 
