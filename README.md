@@ -1,67 +1,133 @@
-# Bootcamp - GT iOS Club
+# Module 0: Intro to Git
 
-This repo contains everything you need to get started with iOS development!
+There are many tutorials on Git which explain things much better than I can,
+so I'll just link the materials and go over what you'll be using the most.
 
-We designed this with beginners in mind, though many of the resources are
-still helpful for more intermediate learners.
+## Tasks you'll be doing here
 
-## Prerequisite Courses
+- [ ] Clone repo
+- [ ] Create branch
+- [ ] Switch branches
+- [ ] Commit changes
+- [ ] Push branch
+- [ ] Create pull request
+- [ ] Merge from pull request
 
-It's possible to succeed in this bootcamp without programming experience,
-though we highly, highly suggest that you get *some* experience beforehand.
+## Reference Material
 
-But prior knowledge of Swift, SwiftUI, or iOS dev is not necessary at all.
+[Atlassian](https://www.atlassian.com/git)
+has some pretty good docs for learning git. I recommend reading
+through everything, but I cherry-picked the most important stuff below:
 
-#### CS 1301 (strongly recommended)
+- [What is git?](https://www.atlassian.com/git/tutorials/what-is-git)
 
-This course gives you a strong foundation for programming if you have no prior
-experience. Without this knowledge, it'll be quite tough (but not impossible)
-to jump straight into app development.
+- [Clone](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone)
 
-#### CS 1331 (recommended)
+- [Pull](https://www.atlassian.com/git/tutorials/syncing/git-pull)
 
-This course builds on 1301 and provides a foundation for object oriented
-programming, which is crucial for app development since Swift
-(especially SwiftUI) use OOP concepts heavily.
+- [Branch](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
 
-#### CS 1332 (recommended)
+- [Stage/Commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)
 
-Limited knowledge of data structures is needed if you want to work on front-end
-stuff, but for complex apps you'll need to have DSA knowledge to be able to
-store and process data effectively.
+- [Push](https://www.atlassian.com/git/tutorials/syncing/git-push)
 
-## Equipment
+- [Pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-To complete the tasks in this course, you need to have a Mac with Xcode
-installed.
+- [Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 
-Xcode is an [IDE](https://www.codecademy.com/article/what-is-an-ide) which
-you'll be using to develop your very own iOS app.
+## Repositories
 
-It's a *very* large program and is known for installation issues, so please
-start installing it right now.
+A repository is the location for which the files for a project are stored.
+Think of it like a fancy folder.
 
-[Download Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+Most programming projects, especially collaborative ones, use git repos
+for version control.
 
-_Note_: You need to have the latest version of macOS to install Xcode.
+This is not just an iOS development thing! If you plan to work in software
+engineering, there is a 99.9% chance you will be dealing with git.
 
-#### But what if I don't have a Mac?
+## Cloning a repo
 
-Because Apple loves to gatekeep, you can only download Xcode on a Mac and
-that's the only way you can develop iOS apps.
+Since repositories (like this) are hosted remotely on websites like Github,
+you need a way to copy the project over on to your device.
 
-This means that you won't be able to do much of the tasks here. Fortunately,
-each module includes tasks that you can run in a
-[Swift playground](https://swiftfiddle.com/)
-if you're really devoted to learning Swift.
+You could just download the source as a zip file, but you'll lose many of
+the powerful features that git offers.
 
-But you'll still be severely handicapped without a Mac, so please reach out
-to your tech lead for assistance.
+We recommend trying out git via the command line first, but this tutorial
+will only go over Xcode's interface.
 
-## Getting started
+### Clone a repo with Xcode
 
-Now that you have Xcode configured, it's time to get started with the bootcamp.
+1. Open the Xcode app and click `Clone Git Repository`
 
-You can change modules by switching branches in this repository.
+2. Enter the URL of the git repo. Refer to the image below to locate the URL.
 
-Go ahead and switch to the `module-0` branch.
+3. Select the folder you want to store the repo. You'll need this throughout
+   the course so don't just put it in your downloads!
+
+4. Xcode should now open up with the cloned repo. Or it'll crash. It's Xcode.
+
+- [x] Clone repo
+
+## Branching
+
+When working on a large project or with others, you want to make your
+changes on a separate branch so that if something breaks, it doesn't
+ruin the whole project.
+
+1. In the top-left corner of Xcode, click on the box symbol next to the folder.
+
+   You should now see a panel with a `Changes` tab and a `Repositories` tab.
+
+2. Switch to the `Repositories` tab. You should see a `gt-ios-bootcamp` repo.
+
+3. If not selected already, click the dropdown arrow to reveal repo details.
+
+4. Right/double click on the `module-0` item under `Branches` and click
+   `Switch...`
+
+5. Now that you're in the module 0 branch, right/double click on the
+   `Branches` item and select `New Branch from...`
+   
+6. Enter a name for the branch. We suggest `firstname-lastname-module0`.
+
+7. You should now be automatically switched to your newly created branch.
+
+- [x] Create branch
+- [x] Switch branches
+
+## Making changes
+
+1. Click on the folder icon to go back to the project source. It should look a
+   little different now. Notice the `GettingStarted` playground file.
+
+2. Click on `GettingStarted` if you're not already there.
+
+3. Read and follow the instructions in the file.
+
+## Commit changes
+
+1. Click on `Integrate` in the top menu bar and select `Commit...`
+
+2. Stage all files by clicking `Stage All`
+
+3. Enter a meaningful commit message like `Update name`
+
+4. Before committing, make sure you're on the right branch.
+   ***Do not*** make commits to `main` or `module-X`
+
+5. Once you're sure of your changes, click `Commit`
+
+- [x] Commit changes
+
+## Pushing
+
+1. Click on `Integrate` in the top menu bar and select `Push...`
+
+- [x] Push branch
+
+## Pull requests & merge
+
+- [x] Create pull request
+- [x] Merge from pull request
