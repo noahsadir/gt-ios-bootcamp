@@ -1,4 +1,4 @@
-# Module 0: Intro to Git
+# Module 0: Using Git with Xcode
 
 There are many tutorials on Git which explain things much better than I can,
 so I'll just link the materials and go over what you'll be using the most.
@@ -6,18 +6,18 @@ so I'll just link the materials and go over what you'll be using the most.
 ## Tasks you'll be doing here
 
 - [ ] Clone repo
-- [ ] Create branch
 - [ ] Switch branches
+- [ ] Create branch
 - [ ] Commit changes
 - [ ] Push branch
-- [ ] Create pull request
-- [ ] Merge from pull request
 
-## Reference Material
+## Reference material
 
 [Atlassian](https://www.atlassian.com/git)
-has some pretty good docs for learning git. I recommend reading
-through everything, but I cherry-picked the most important stuff below:
+has some pretty good docs for learning git.
+
+I recommend reading through everything, but I cherry-picked the most important
+stuff below:
 
 - [What is git?](https://www.atlassian.com/git/tutorials/what-is-git)
 
@@ -54,7 +54,7 @@ you need a way to copy the project over on to your device.
 You could just download the source as a zip file, but you'll lose many of
 the powerful features that git offers.
 
-We recommend trying out git via the command line first, but this tutorial
+I recommend trying out git via the command line first, but this tutorial
 will only go over Xcode's interface.
 
 ### Clone a repo with Xcode
@@ -86,6 +86,7 @@ ruin the whole project.
 
 4. Right/double click on the `module-0` item under `Branches` and click
    `Switch...`
+   _Note_: `module-0` and other branches may be under `Remotes`
 
 5. Now that you're in the module 0 branch, right/double click on the
    `Branches` item and select `New Branch from...`
@@ -94,8 +95,8 @@ ruin the whole project.
 
 7. You should now be automatically switched to your newly created branch.
 
-- [x] Create branch
 - [x] Switch branches
+- [x] Create branch
 
 ## Making changes
 
@@ -124,6 +125,7 @@ ruin the whole project.
 ## Pushing
 
 _Note_: This is a risky operation. Make sure you're on the right branch!
+        (The right branch is not `main` or `module-X`)
 
 1. Click on `Integrate` in the top menu bar and select `Push...`
 
@@ -134,7 +136,23 @@ _Note_: This is a risky operation. Make sure you're on the right branch!
 
 - [x] Push branch
 
+### Again, you should never push to main!
+
+This is a very important concept that many companies in the real world
+enforce. Changes should be pushed on a seperate branch and merged into main.
+
 ## Pull requests & merge
 
-- [x] Create pull request
-- [x] Merge from pull request
+Now you've learned how to pull, commit, and push your changes to a project.
+
+But you're just making changes to your feature branch. What if you want to
+actually push your changes to the project as a whole?
+
+A common way to merge changes is to 
+[open a pull request through Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+so that others can review and approve your changes.
+
+Then, once your changes are approved, they can be merged through Github's
+interface.
+
+Later in the semester, you'll do this in a group project.
