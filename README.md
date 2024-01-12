@@ -1,67 +1,48 @@
-# Bootcamp - GT iOS Club
+# Module 2: More Swift Basics
 
-This repo contains everything you need to get started with iOS development!
+In this module, we'll go over collections, loops, functions and closures.
 
-We designed this with beginners in mind, though many of the resources are
-still helpful for more intermediate learners.
+Please note that this module is _not_ comprehensive. We'll only go over the
+basics here.
 
-## Prerequisite Courses
+Things you'll accomplish:
+[ ] Create and manipulate Array objects
+[ ] Create and manipulate Set objects
+[ ] Create and manipulate Dictionary objects
+[ ] Utilize while loops
+[ ] Utilize for loops
+[ ] Streamline code using loops
+[ ] Create basic functions
+[ ] Utilize closures for extending functions
+[ ] Utilize closures for handling async data
 
-It's possible to succeed in this bootcamp without programming experience,
-though we highly, highly suggest that you get *some* experience beforehand.
+## Getting Started
 
-But prior knowledge of Swift, SwiftUI, or iOS dev is not necessary at all.
+You should've cloned this repo back in module 0.
 
-#### CS 1301 (strongly recommended)
+To switch to module 2, open Xcode and 
 
-This course gives you a strong foundation for programming if you have no prior
-experience. Without this knowledge, it'll be quite tough (but not impossible)
-to jump straight into app development.
+## Collections
 
-#### CS 1331 (recommended)
+Like most languages, Swift contains implementations of common data structures
+including Arrays (aka lists), Sets, and Dictionaries (aka maps)
 
-This course builds on 1301 and provides a foundation for object oriented
-programming, which is crucial for app development since Swift
-(especially SwiftUI) use OOP concepts heavily.
+### Array
 
-#### CS 1332 (recommended)
+In Swift, the Array data structure is used to store sequences of data.
 
-Limited knowledge of data structures is needed if you want to work on front-end
-stuff, but for complex apps you'll need to have DSA knowledge to be able to
-store and process data effectively.
+The name is a _bit_ misleading though, since it resembles what most languages
+consider to be lists. Notably: Swift Arrays have the following properties:
 
-## Equipment
+- Dynamic sizing; you don't need to specify array size upon initialization
+- Insertion, modification, and removal functions
+- Advanced indexing functions
+- Built-in sorting functions (similar to Java List)
 
-To complete the tasks in this course, you need to have a Mac with Xcode
-installed.
+### Set
 
-Xcode is an [IDE](https://www.codecademy.com/article/what-is-an-ide) which
-you'll be using to develop your very own iOS app.
+The Set data structure is fairly straightforward if you've used sets in other
+languages such as Java or Python.
 
-It's a *very* large program and is known for installation issues, so please
-start installing it right now.
+It's assumed that you have a general understanding 
 
-[Download Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-
-_Note_: You need to have the latest version of macOS to install Xcode.
-
-#### But what if I don't have a Mac?
-
-Because Apple loves to gatekeep, you can only download Xcode on a Mac and
-that's the only way you can develop iOS apps.
-
-This means that you won't be able to do much of the tasks here. Fortunately,
-each module includes tasks that you can run in a
-[Swift playground](https://swiftfiddle.com/)
-if you're really devoted to learning Swift.
-
-But you'll still be severely handicapped without a Mac, so please reach out
-to your tech lead for assistance.
-
-## Getting started
-
-Now that you have Xcode configured, it's time to get started with the bootcamp.
-
-You can change modules by switching branches in this repository.
-
-Go ahead and switch to the `module-0` branch.
