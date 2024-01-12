@@ -122,17 +122,17 @@ print("4th element of animalArray: \(animalArray[4])")
 let unwrappedArray = optionalArray!
 print(unwrappedArray)
 
-// [1] Initialize optionalArray
+// [4] Initialize optionalArray
 /* BEGIN CODE */
 
 /* END CODE */
 
-// [2] Add elements to optionalArray
+// [5, 6, 7] Add elements to optionalArray
 /* BEGIN CODE */
 
 /* END CODE */
 
-// [3] Print the 5th element of optionalArray
+// [8] Print the 5th element of optionalArray
 /* BEGIN CODE */
 
 /* END CODE */
