@@ -117,8 +117,10 @@ print("*** ARRAY PRACTICE ***")
 var animalArray: [String] = ["Lion", "Zebra", "Elephant", "Turtle"]
 var optionalArray: [Int]?
 
+// [2] Is there a logical error with accessing index `4` in a 4-element array?
 print("4th element of animalArray: \(animalArray[4])")
 
+// [3] The operation below is quite dangerous. How can we make it safer?
 let unwrappedArray = optionalArray!
 print(unwrappedArray)
 

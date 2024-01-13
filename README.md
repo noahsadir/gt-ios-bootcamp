@@ -118,7 +118,7 @@ segment when you encounter a `[RUN HERE]` comment.
 
 Once you get to the practice section, do the following:
 
-### What you've accomplished so far:
+#### What you've accomplished so far:
 
 - [x] Create and manipulate Array objects
 - [x] Create and manipulate Set objects

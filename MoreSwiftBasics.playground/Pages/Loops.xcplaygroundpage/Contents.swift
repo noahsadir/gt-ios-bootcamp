@@ -118,5 +118,9 @@ for fruit in fruits {
 //                (hint: it involves hashing)
 print("")
 
+
+
+
+print("*** LOOP PRACTICE ***")
 // Now that you've explored how loops work in Swift, it's time to practice.
 // TODO: Refer to Module 2 docs to implement this part
