@@ -50,4 +50,9 @@ guard foodStock > 0, let amountOfFoodInsidePan = amountOfFoodInsidePan else {
     fatalError()
 }
 
-// CHALLENGE 4: Assign the count of an optional string to a non-optional variable using if let, guard let, and nil coalescing operator
+// CHALLENGE 4: Assign the length of optional string 'myString' to variable 'length'. You are NOT allowed to perform any force unwrapping in the solution and are NOT allowed to perform "if myString == nil". (maybe you should explore the other methods of unwrapping)
+// If myString has no value, you can set it to 0.
+let myString: String? = "iOS Club"
+var length: Int = -1
+
+// <- [CLICK HERE TO RUN ME], the console should not display an error after running.
