@@ -7,7 +7,7 @@ import Foundation
 /*
  TIPS:
  - Click on the line number to the left of this to run all the code from line 1 to the line number clicked on the console. Doing so also shows you the value of all variables on the grey space to your right.
- - To see the result of the execution (when doing it as above), open the console by clicking on the rectangular-ish icon on the bottom right of the screen.
+ - To see the print results of the execution (when doing it as above), open the console by clicking on the rectangular-ish icon on the bottom right of the screen.
  */
 
 
@@ -52,7 +52,7 @@ remainder %= 1
 
 // <- [CLICK HERE TO RUN ME]
 
-// TODO: Solve these 5 challenges using the given inputs (a, b, c, d).
+// TODO: Solve these 5 challenges using the given inputs (a, b, c, d, e).
 
 
 var a: Int
