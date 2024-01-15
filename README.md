@@ -21,7 +21,7 @@ This section of the assignment will serve as a warm-up to help you get comfortab
 
 ### Operators
 
-Here, you'll be asked to fulfill certain prompts that require the use of operators. Operators can be used to perform algebraic operations with numbers, or even combine strings. Since you'll be using them a lot during your iOS journey, we suggest being familiar with them.
+Here, you'll be asked to fulfill certain prompts that require the use of operators. Operators can be used to perform algebraic operations with numbers, or even combine strings. Since you'll be using them a lot during your iOS journey, we suggest getting familiar with them.
 
 - [x] Perform algebraic operations using Swift operators.
 - [x] Perform String operations.
