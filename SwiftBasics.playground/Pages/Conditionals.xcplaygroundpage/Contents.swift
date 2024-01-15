@@ -6,17 +6,20 @@ import Foundation
 
 /*
  TIPS:
- - Click on the line number to the left of this to run all the code from line 1 to the line number clicked on the console. Doing so also shows you the value of all variables on the grey space to your right.
+ - Click on the line number to the left of this to run all the code from line 1 up to the line number clicked on the console. Doing so also shows you the present value of all variables on the grey space to your right.
  - To see the print results of the execution (when doing it as above), open the console by clicking on the rectangular-ish icon on the bottom right of the screen.
  */
 
-// CHALLENGE 1: perform the same conditional check using ternary, if-else, and switch statements.
+// CHALLENGE 1: Gary has a smart alarm system which reads a message (alarmMessage) depending on whether he's awake (represented by isAwake). If Gary is awake, set the alarm message to "Good morning Gary!", otherwise set it to "Wake up Gary!". Recreate such a conditional check using if-else and ternary statements.
+let isAwake: Bool = true
+var alarmMessage: String
+// [start here]
 
-// CHALLENGE 2: given two states, combine if, else if, else as needed to achieve it.
+// CHALLENGE 2: Using if-(else if)-else statements, perform the following condition check: if both gary (garyIsAwake) and max (maxIsAwake) are awake, print "How are you both feeling?". If only one of them is awake, print "How are you feeling X?", where X is the person awake, and "Wake up Y!" where Y is the other person (not awake). If none are awake, print "Wake up!".
+let garyIsAwake: Bool = true
+let maxIsAwake: Bool = false
 
-// CHALLENGE 3: given three states, combine if, else if, else as needed to achieve it.
+// CHALLENGE 3: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment.
 
 // CHALLENGE 4: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment.
-
-// CHALLENGE 5: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment.
 

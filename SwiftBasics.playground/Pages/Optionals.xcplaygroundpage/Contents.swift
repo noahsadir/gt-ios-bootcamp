@@ -6,7 +6,7 @@ import Foundation
 
 /*
  TIPS:
- - Click on the line number to the left of this to run all the code from line 1 to the line number clicked on the console. Doing so also shows you the value of all variables on the grey space to your right.
+ - Click on the line number to the left of this to run all the code from line 1 up to the line number clicked on the console. Doing so also shows you the present value of all variables on the grey space to your right.
  - To see the print results of the execution (when doing it as above), open the console by clicking on the rectangular-ish icon on the bottom right of the screen.
  */
 
@@ -16,8 +16,8 @@ import Foundation
  */
 
 // CHALLENGE 1: You are given a postcode input which may or may not contain nil. You will want to check if this postcode is not nil (it does exist), and add it to the address stored in myAddress only if the postcode is not nil. Recreate this logic using “if let”, “guard let”, “force unwrap”, and "nil coalescing" statements. Use fatalError() inside the 'else block' of your "guard let".
-var myPostCode: String? = "30309"
-var myAddress: String = "955 Spring St. NW, "
+var myPostCode: String? = "30332"
+var myAddress: String = "North Avenue, GT, "
 
 myAddress += myPostCode ?? ""
 if let postcode = myPostCode {
@@ -45,10 +45,7 @@ var foodStock: Int = 20
 var amountOfFoodInsidePan: Int? = 5
 var cookingMode: String? = nil
 
-guard foodStock > 0, let amountOfFoodInsidePan = amountOfFoodInsidePan else {
-    print("I give up.")
-    fatalError()
-}
+
 
 // CHALLENGE 4: Assign the length of optional string 'myString' to variable 'length'. You are NOT allowed to perform any force unwrapping in the solution and are NOT allowed to perform "if myString == nil". (maybe you should explore the other methods of unwrapping)
 // If myString has no value, you can set it to 0.
