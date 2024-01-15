@@ -38,3 +38,6 @@ You will find this section much more challenging than the preceding ones. This i
 
 - [x] Referencing optionals.
 - [x] Safely unwrap optionals.
+
+
+TODO: move all challenge descriptions here for better readability.
