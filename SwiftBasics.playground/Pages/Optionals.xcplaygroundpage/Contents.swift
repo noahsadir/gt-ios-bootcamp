@@ -19,11 +19,6 @@ import Foundation
 var myPostCode: String? = "30332"
 var myAddress: String = "North Avenue, GT, "
 
-myAddress += myPostCode ?? ""
-if let postcode = myPostCode {
-    myAddress += postcode
-}
-
 // CHALLENGE 2: If a rank exists (has a value, not nil), set the endOfGameSummary to "Congrats! You've achieved rank X in this round." where X is the value stored in myRank. Otherwise, set the endOfGameSummary to "You did not achieve a rank in this round. Better luck next time!". Recreate this logic using the "ternary" operator, "guard let" statement, and "if let" statement. Use fatalError() inside the 'else block' of your "guard let".
 var myRank: Int? = nil
 var endOfGameSummary: String = "None"

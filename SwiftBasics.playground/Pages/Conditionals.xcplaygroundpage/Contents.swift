@@ -19,7 +19,8 @@ var alarmMessage: String
 let garyIsAwake: Bool = true
 let maxIsAwake: Bool = false
 
-// CHALLENGE 3: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment.
+// CHALLENGE 3: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment. You are trying to bake a cake, you need 'flourNeeded' grams of flour to bake it. You currently have 'flourLeft' grams of flour. Write a conditional statement which prints "I have enough flour." if the amount of flour needed is available. Otherwise, print "I'll go buy more flour!" and increment the amount of flour you now have by 15.
+let flourLeft: Int = 10
+let flourNeeded: Int = 5
 
-// CHALLENGE 4: test the combined used of &&, !, ||, <, >, <=, >= to achieve a conditional assignment.
 

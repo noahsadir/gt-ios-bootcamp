@@ -67,17 +67,25 @@ var e: String
  */
 a = 2
 b = 10
+c = 10
 
-let result1: Int = 0
+var result1: Int = -1 // Declared but uninitialized.
+func challenge1() -> Void {
+    // CODE GOES HERE
+}
 
 /*
  CHALLENGE 2:
-    Divide the value in 'result1' by a. Subtract the result of that by b+4. Store the end value of this computation in result2.
+    Divide the value in 'result1' by a. Subtract the result of that by b+c. Store the end value of this computation in result2.
  */
 a = 3
 b = 20
-
-let result2: Int = 0
+c = 4
+ 
+var result2: Int = -1 // Declared but uninitialized.
+func challenge2() -> Void {
+    // CODE GOES HERE
+}
 
 /*
  CHALLENGE 3:
@@ -87,7 +95,10 @@ let result2: Int = 0
 d = "I've been alive for "
 e = " years."
 
-let result3: String = ""
+var result3: String = "" // Declared but uninitialized.
+func challenge3() -> Void {
+    // CODE GOES HERE
+}
 
 /*
  CHALLENGE 4:
@@ -99,19 +110,54 @@ b = 3
 d = "Hmm, 3 doesn't quite fit into 10, it yields a remainder of "
 e = ". That's unfortunate."
 
-let result4: String = ""
+var result4: String = "" // Declared but uninitialized.
+func challenge4() -> Void {
+    // CODE GOES HERE
+    
+}
 
 /*
  CHALLENGE 5:
     - Without using the '+' operator (use something that looks very similar), add the value 10 to input a.
     - Without using the '*' operator (use something that looks very similar), multiply input b by a.
  */
+func challenge5() -> Void {
+    // CODE GOES HERE
+}
 
 
-print("""
-    result1: \(result1)
-    result2: \(result2)
-    result3: \(result3)
-    result4: \(result4)
-    final a & b: \(a) \(b)
-""")
+
+// IGNORE ALL BELOW:
+
+import XCTest
+
+class OperatorsTests: XCTestCase {
+    
+    override func setUp() {
+        super.setUp()
+        testSuites()
+    }
+    
+    func testSuites() {
+        testChallenge1()
+    }
+    
+    func testChallenge1() {
+        
+        challenge1()
+        XCTAssertEqual(result1, 120)
+    }
+    
+    func endValues() {
+        print("""
+            result1: \(result1)
+            result2: \(result2)
+            result3: \(result3)
+            result4: \(result4)
+            final a & b: \(a) \(b)
+        """)
+    }
+}
+
+let tests = OperatorsTests()
+
