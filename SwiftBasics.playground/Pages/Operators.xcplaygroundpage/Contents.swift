@@ -24,6 +24,10 @@ let lastName = "Albahar"
 let fullName = firstName + " " + lastName
 let dateOfBirth = "December " + "13" + ", " + "2003"
 
+// ... even place values inside strings using \() - called String interpolation
+let myAge = 20
+let interpolation = "My age is \(myAge)."
+
 // <- [CLICK HERE TO RUN ME]
 
 // (subtract) - : we can use this operator to subtract two numbers.

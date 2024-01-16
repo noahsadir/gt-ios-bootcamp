@@ -15,11 +15,24 @@ import Foundation
  Over the past week, you've learned about one of Swift's powerful features. Optionals. You'll encounter these a lot when dealing with iOS frameworks, APIs, and old codebases. Thus, it's important to be able to understand the rules that come with it as well as how to manipulate/read values wrapped in Optionals. A lack of such knowledge can be hazardous for your application. Use these challenges as an opportunity to get comfortable with them:
  */
 
-// CHALLENGE 1: You are given a postcode input which may or may not contain nil. You will want to check if this postcode is not nil (it does exist), and add it to the address stored in myAddress only if the postcode is not nil. Recreate this logic using “if let”, “guard let”, “force unwrap”, and "nil coalescing" statements. Use fatalError() inside the 'else block' of your "guard let".
+/* CHALLENGE 1: You are given a postcode input which may or may not contain nil. You will want to check if this postcode is not nil (it does exist), and add it to the address stored in myAddress only if the postcode is not nil. Repeat this logic using each of the following once:
+        - “if let”
+        - “guard let”
+        - “force unwrap”
+        - "nil coalescing"
+ 
+    Use fatalError() inside the 'else block' of your "guard let".
+ */
 var myPostCode: String? = "30332"
 var myAddress: String = "North Avenue, GT, "
 
-// CHALLENGE 2: If a rank exists (has a value, not nil), set the endOfGameSummary to "Congrats! You've achieved rank X in this round." where X is the value stored in myRank. Otherwise, set the endOfGameSummary to "You did not achieve a rank in this round. Better luck next time!". Recreate this logic using the "ternary" operator, "guard let" statement, and "if let" statement. Use fatalError() inside the 'else block' of your "guard let".
+/* CHALLENGE 2: If a rank exists (has a value, not nil), set the endOfGameSummary to "Congrats! You've achieved rank X in this round." where X is the value stored in myRank. Otherwise, set the endOfGameSummary to "You did not achieve a rank in this round. Better luck next time!". Repeat this logic using each of the following once:
+        - “if let”
+        - “guard let”
+        - ternary operator
+
+    Use fatalError() inside the 'else block' of your "guard let".
+ */
 var myRank: Int? = nil
 var endOfGameSummary: String = "None"
 
