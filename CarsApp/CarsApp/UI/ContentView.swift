@@ -9,16 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        CarCatalogView()
     }
 }
 
 #Preview {
     ContentView()
+}
+
+
+class DummyState: ObservableObject {
+    @Published var dummy: Bool = true
 }

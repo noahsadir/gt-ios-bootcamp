@@ -8,11 +8,54 @@
 import SwiftUI
 
 struct CarCatalogView: View {
+    var catalog = CarCatalog()
+    @State var navPath: NavigationPath = .init()
+    
+    @ObservedObject var dummyState: DummyState = .init()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack(path: $navPath) {
+            VStack {
+                List {
+                    ForEach(Array(catalog.carsAvailable.keys), id: \.self.id) { model in
+        
+                        HStack {
+                                                        
+                            Text(model.getModelID() + " - " + model.getBrandName() + " " + model.getModelName())
+                            
+                            
+                            Button("", systemImage: "arrow.right", action: {
+                                navPath.append(model)
+                            })
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
+                        
+                        
+                    }
+                }
+                
+            }
+            .navigationTitle("Catalog")
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Button("Favourites") {
+                        navPath.append(catalog.favourites) // append favourites array
+                    }
+                })
+            })
+            .navigationDestination(for: [CarModel].self, destination: { favs in
+                FavouritesView(catalog: catalog, navPath: $navPath, dummyState: dummyState)
+            })
+            .navigationDestination(for: CarModel.self, destination: { model in
+                CarModelView(carModel: model, catalog: catalog, dummyState: dummyState)
+            })
+        }
+
+        
     }
 }
 
 #Preview {
-    CarCatalogView()
+    return CarCatalogView()
 }
