@@ -164,7 +164,7 @@ _Note_: This is a risky operation. Make sure you're on the right branch!
 #### Command line equivalent
 
 ```
-git push
+git push origin/[branch name]
 ```
 
 ### Again, you should never push to main!
