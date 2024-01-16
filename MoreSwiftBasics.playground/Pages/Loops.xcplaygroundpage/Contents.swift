@@ -113,7 +113,7 @@ print("")
 for fruit in fruits {
     print("Array insertion: Current fruit is \(fruit)")
 }
-// <-- [RUN HERE] Is the output what you expected?
+// <-- [RUN HERE] Is the order of the output what you expected?
 //                If you've taken CS 1332, you probably know what's going on
 //                (hint: it involves hashing)
 print("")
@@ -124,3 +124,4 @@ print("")
 print("*** LOOP PRACTICE ***")
 // Now that you've explored how loops work in Swift, it's time to practice.
 // TODO: Refer to Module 2 docs to implement this part
+

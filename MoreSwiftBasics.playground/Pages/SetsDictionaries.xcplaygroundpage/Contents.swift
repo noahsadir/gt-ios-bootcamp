@@ -11,6 +11,7 @@ import Foundation
 var set1: Set<Int> = [1, 2, 3, 4, 5]
 var set2: Set<Int> = Set<Int>()
 var set3: Set<String>?
+var set4: Set = [1, 2, 3]
 
 // Sets have a similar interface to Arrays for common functions
 // Since item order is not preserved with a Set, there is no
@@ -123,3 +124,64 @@ print("")
 print("*** SET & DICTIONARY PRACTICE ***")
 // Now that you've explored how arrays work in Swift, it's time to practice.
 // TODO: Refer to Module 2 docs to implement this part
+
+let animalSet: Set<String> = ["Giraffe", "Zebra", "Elephant", "Panda", "Lion"]
+
+// [1] Declare a String-Set with Zebra (can be done in one line)
+/* BEGIN CODE */
+
+/* END CODE */
+
+// Validate your `mySet` declaration. Also note two useful functions of Set
+if !mySet.contains("Zebra") {
+    print("--> FAILURE: mySet does not contain Zebra")
+} else if !mySet.isSubset(of: animalSet) {
+    print("--> FAILURE: mySet is not a subset of animalSet")
+} else {
+    print("SUCCESS: mySet contains Zebra and is a subset of animalSet")
+}
+// <-- [RUN HERE] If you created this set properly, this should output "SUCCESS..."
+
+// [2] Declare an optional String-Set, but don't initialize it
+/* BEGIN CODE */
+
+/* END CODE */
+
+// [3] Insert "Giraffe" into optionalSet.
+/* BEGIN CODE */
+
+/* END CODE */
+
+// [4] Check if optionalSet contains "Giraffe"
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] optionalSet should NOT contain Giraffe at this point
+
+// [5] Initialize optionalSet with "Cow", "Elephant"
+// (can be done in one line)
+/* BEGIN CODE */
+
+/* END CODE */
+
+// [6] Insert "Giraffe" into optionalSet again
+/* BEGIN CODE */
+
+/* END CODE */
+
+// [7] Check if optionalSet contains "Giraffe"
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] optionalSet SHOULD contain Giraffe at this point
+
+print("optionalSet size: \(optionalSet?.count)")
+
+// [8] Insert "Giraffe" into optionalSet again
+/* BEGIN CODE */
+
+/* END CODE */
+
+print("optionalSet size: \(optionalSet?.count)")
+// <-- [RUN HERE] The set should remain unchanged.
+//                This is an important property of sets!

@@ -4,5 +4,6 @@
         <page name='Arrays'/>
         <page name='SetsDictionaries'/>
         <page name='Loops'/>
+        <page name='FunctionsClosures'/>
     </pages>
 </playground>

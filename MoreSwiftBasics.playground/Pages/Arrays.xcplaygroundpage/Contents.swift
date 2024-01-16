@@ -5,10 +5,17 @@
 
 import Foundation
 
-// Below are a few examples of how you can initialize an Array type in Swift:
+// Below are a few examples of how you can declare an Array type in Swift:
 var arr1: [Int] = [1, 4, 3, 2, 8, 9, 3, 4, 2, 5, 10, 3, 3, 2]
 var arr2: [Int] = [Int]()
 var arr3: [Int]?
+
+// Some other less-than-common ways to declare an Array:
+var arr4: [Int]
+var arr5: Array<Int> = [Int]()
+var arr6: [Int] = Array<Int>()
+var arr7: Array = [1, 2, 3]
+var arr8 = [1, 2, 3]
 
 // To get the number of elements in an array, use `.count`
 // Think of it like `.size()` in Java or `len()` in Python
@@ -26,9 +33,9 @@ print("")
 
 // To append elements to the end of an array, use .append()
 print("arr2 before: \(arr2)")
+arr2.append(3)
 arr2.append(1)
 arr2.append(2)
-arr2.append(3)
 print("arr2 after:  \(arr2)")
 // <-- [RUN HERE] Do the before/after values of arr2 match what you expect?
 print("")
@@ -60,7 +67,7 @@ print("arr1 max: \(arr1.max() ?? 0)")
 print("")
 
 // Array also contains a built-in sort function
-print("arr2 unsorted: \(arr2.sorted())")
+print("arr2 unsorted: \(arr2)")
 print("arr2 sorted: \(arr2.sorted())")
 // <-- [RUN HERE] How does Swift sort elements by default?
 print("")
