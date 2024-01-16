@@ -16,15 +16,18 @@ import Foundation
 
 class CarCatalog {
 
-    var carsAvailable: [CarModel : Int] // A mapping to the car models and the amount of these models available.
+    var carsAvailable: [CarModel : Int] // A mapping of the car models to the amount of these models available.
+    var displayedCars: [CarModel]
     var favourites: [CarModel]
     
     /*
-     TODO: write an initializer that fetches all the car models. For the purposes of this assignment, initialize carsAvailable to a default array of 5-6 car models.
+     TODO: write an initializer that fetches all the car models. For the purposes of this assignment, initialize carsAvailable to a default array of 5-6 car models. Make sure the displayedCars are initialized with all the cars in carsAvailable. Upon launch, the user should have no favourites.
     */
     init() {
+        // SOLUTION
         self.carsAvailable = [CarModel(id: "M497") : 2, CarModel(id: "M667") : 1, CarModel(id: "M001") : 0, CarModel(id: "M221") : 2]
         self.favourites = []
+        self.displayedCars = Array(self.carsAvailable.keys)
     }
     
     
@@ -33,6 +36,8 @@ class CarCatalog {
         This function gets called by the UI whenever the user wants to ADD/REMOVE this car from their favourites list. Change the state of the catalog to accomplish this.
      */
     func toggleFavourite(car: CarModel) {
+        
+        // SOLUTION
         if favourites.contains(where: {$0  == car}) {
             favourites.removeAll(where: {$0 == car})
         } else {
@@ -45,6 +50,8 @@ class CarCatalog {
         This function gets called by the UI whenever the user wants to view the amount of cars available from a certain model.
      */
     func getCarAvailability(car: CarModel) -> Int {
+        
+        // SOLUTION
         if let availability = carsAvailable[car] {
             return availability
         } else {
@@ -54,10 +61,15 @@ class CarCatalog {
     
     /*
         TODO: implement this function
-        Simply return carsAvailable excluding any car that IS NOT of the given brand.
+        Set the displayedCars to all the available cars excluding any car that IS NOT of the given brand. In essence, this is the filtering functionality our app uses to display cars of a certain brand.
      */
-    func filterCarsBy(brand: CarBrand) -> [CarModel : Int] {
-        return [:]
+    func filterCarsBy(brand: CarBrand) {
+        
+        // SOLUTION
+        displayedCars = carsAvailable.keys.filter({ car in
+            car.getBrandName() == brand.rawValue
+        })
+        
     }
     
     

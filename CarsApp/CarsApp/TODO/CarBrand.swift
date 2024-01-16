@@ -16,8 +16,9 @@ import Foundation
             (2) Implement changes within all functions that have a TODO comment.
             (3) Test your implementation with very basic test cases.
  */
-enum CarBrand: CaseIterable {
-    case none
+enum CarBrand: String, CaseIterable {
+    case none, mercedes = "Mercedes"
+
 }
 
 

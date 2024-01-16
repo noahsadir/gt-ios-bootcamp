@@ -30,7 +30,8 @@ import Foundation
 
 
 struct CarModel: Identifiable, Hashable {
-    let id: String
+    
+    let id: String // DO NOT EDIT THIS. This is the model id, and is used by the UI.
     
     // TODO: complete the struct's implementation
     

@@ -18,7 +18,7 @@ struct CarCatalogView: View {
         NavigationStack(path: $navPath) {
             VStack {
                 List {
-                    ForEach(Array(catalog.carsAvailable.keys), id: \.self.id) { model in
+                    ForEach(Array(catalog.displayedCars), id: \.self.id) { model in
         
                         HStack {
                                                         
@@ -42,6 +42,10 @@ struct CarCatalogView: View {
                     Button("Favourites") {
                         navPath.append(catalog.favourites) // append favourites array
                     }
+                })
+                
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    FilterMenu(catalog: catalog, dummyState: dummyState)
                 })
             })
             .navigationDestination(for: [CarModel].self, destination: { favs in
