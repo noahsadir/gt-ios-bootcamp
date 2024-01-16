@@ -54,8 +54,8 @@ you need a way to copy the project over on to your device.
 You could just download the source as a zip file, but you'll lose many of
 the powerful features that git offers.
 
-I recommend trying out git via the command line first, but this tutorial
-will only go over Xcode's interface.
+This tutorial will focus on using git via the Xcode interfact, but you
+should try out git via the command line first.
 
 ### Clone a repo with Xcode
 
@@ -69,6 +69,13 @@ will only go over Xcode's interface.
 4. Xcode should now open up with the cloned repo. Or it'll crash. It's Xcode.
 
 - [x] Clone repo
+
+#### Command line equivalent
+
+```
+cd [project destination path]
+git clone [repo url]
+```
 
 ## Branching
 
@@ -98,6 +105,15 @@ ruin the whole project.
 - [x] Switch branches
 - [x] Create branch
 
+#### Command line equivalent
+
+```
+git pull origin/module-0
+git checkout module-0
+
+git checkout -b [branch name]
+```
+
 ## Making changes
 
 1. Click on the folder icon to go back to the project source. It should look a
@@ -122,6 +138,15 @@ ruin the whole project.
 
 - [x] Commit changes
 
+#### Command line equivalent
+
+```
+[Complete steps 1-3]
+
+git add *
+git commit -m "[your message]"
+```
+
 ## Pushing
 
 _Note_: This is a risky operation. Make sure you're on the right branch!
@@ -135,6 +160,12 @@ _Note_: This is a risky operation. Make sure you're on the right branch!
 3. Click `Push`. Hopefully, Xcode won't crash at this point.
 
 - [x] Push branch
+
+#### Command line equivalent
+
+```
+git push
+```
 
 ### Again, you should never push to main!
 
