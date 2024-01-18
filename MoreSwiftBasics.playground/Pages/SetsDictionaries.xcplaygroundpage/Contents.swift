@@ -5,7 +5,7 @@
 
 import Foundation
 
-/* SETS */
+/* MARK: SETS */
 
 // Here are some ways you can declare a Set variable
 var set1: Set<Int> = [1, 2, 3, 4, 5]
@@ -65,7 +65,7 @@ print("")
 
 
 
-/* DICTIONARIES */
+/* MARK: DICTIONARIES */
 
 // Here are some ways you can initialize a dictionary
 var dict1: [String: Double] = ["Apple": 0.99, "Banana": 0.59, "Strawberries": 1.99, "Grapes": 2.99, "Orange": 1.29]

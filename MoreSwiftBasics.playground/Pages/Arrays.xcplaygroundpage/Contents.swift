@@ -91,7 +91,7 @@ print("")
 print("arr3 before initializing: \(arr3)")
 arr3 = []
 print("arr3 after initializing: \(arr3)")
-// <-- [RUN HERE] How are elements sorted here?
+// <-- [RUN HERE]
 print("")
 
 // Notice how arr3 is an optional type (allowing it to be nil)
@@ -130,6 +130,7 @@ print("4th element of animalArray: \(animalArray[4])")
 // [3] The operation below is quite dangerous. How can we make it safer?
 let unwrappedArray = optionalArray!
 print(unwrappedArray)
+
 
 // [4] Initialize optionalArray
 /* BEGIN CODE */

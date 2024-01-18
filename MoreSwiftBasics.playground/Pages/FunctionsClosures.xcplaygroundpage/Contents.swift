@@ -5,6 +5,8 @@
 
 import Foundation
 
+/* MARK: FUNCTION */
+
 // Swift's function (aka method) syntax is similar to most languages,
 // but with a few peculiarities.
 
@@ -136,7 +138,7 @@ print("safelyDivideWithMessage(10, by: 5) -> \(div10by5Tuple.message): \(div10by
 print("safelyDivideWithMessage(10, by: 0) -> \(div10by0Tuple.message): \(div10by0Tuple.result)")
 // <-- [RUN HERE] Remember that the result is still an optional type
 
-/* CLOSURES */
+/* MARK: CLOSURE */
 
 // Blocks of code can be used as variables themselves.
 // These are known in Swift as closures, but you may also know them as lambdas.
@@ -187,3 +189,15 @@ countAndNotify(until: 15, onFinish: { totalCount in
 // <-- [RUN HERE] Notice how 15 gets passed into the closure block.
 
 
+
+
+
+print("*** FUNCTIONS & CLOSURES PRACTICE ***")
+// Now that you've explored how functions & closures work in Swift,
+// it's time to practice.
+// TODO: Refer to Module 2 docs to implement this part
+
+// - Simulated API call
+// - Practice loops & collections w/ custom sort
+// - Use Swift's built in sort function
+// - Binary search?

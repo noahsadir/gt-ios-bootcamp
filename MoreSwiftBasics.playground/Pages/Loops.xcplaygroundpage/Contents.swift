@@ -5,7 +5,7 @@
 
 import Foundation
 
-/* WHILE LOOPS */
+/* MARK: WHILE LOOPS */
 
 // While loops follow a very similar syntax to most other languages
 // Even if you don't know Swift, you'll likely understand the code below:
@@ -53,7 +53,7 @@ print("")
 
 
 
-/* FOR LOOPS */
+/* MARK: FOR LOOPS */
 
 // You can use ... to specify a range between two values (inclusive)
 for i in 0...10 {
@@ -92,7 +92,13 @@ for i in 0..<fruits.count {
 print("")
 
 // You can also easily iterate through dictionary entries
-var fruitPrices: [String: Double] = ["Apple": 0.99, "Banana": 0.59, "Strawberries": 1.99, "Grapes": 2.99, "Orange": 1.29]
+var fruitPrices: [String: Double] = [
+    "Apple": 0.99,
+    "Banana": 0.59,
+    "Strawberries": 1.99,
+    "Grapes": 2.99,
+    "Orange": 1.29
+]
 for (fruit, price) in fruitPrices {
     print("For loop (dictionary): Price of \(fruit) is $\(price)")
 }
@@ -125,3 +131,77 @@ print("*** LOOP PRACTICE ***")
 // Now that you've explored how loops work in Swift, it's time to practice.
 // TODO: Refer to Module 2 docs to implement this part
 
+var numArr: [Int] = Array(repeating: 0, count: 5)
+
+// [1] Rewrite this code to use a loop
+/* BEGIN CODE */
+numArr[0] = 10
+numArr[1] = 20
+numArr[2] = 30
+numArr[3] = 40
+numArr[4] = 50
+/* END CODE */
+print("numArr: \(numArr)")
+// <-- [RUN HERE] The output should be unchanged
+
+// Here, we have a dictionary which maps message ID values to their
+// corresponding message contents.
+var messages: [String: String] = [
+    "l8y48": "Have to go now. Bye!",
+    "cwhrp": "Hello!",
+    "id2qb": "Hey, how's it going?",
+    "m7h3s": "Goodbye!",
+    "rlb2n": "Good to hear. I'm learning Swift too!",
+    "b2vbc": "Pretty good, just learning some Swift."
+]
+// [2] Print out each message ID and their contents.
+//     Reference the docs for the desired output format.
+print("\nMessage Data:")
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] Does this seem like the order of a normal conversation?
+//                Perhaps we're missing some data about which messages
+//                come before the other.
+
+
+let messageOrder: [String] = ["cwhrp", "id2qb", "b2vbc", "rlb2n", "l8y48", "m7h3s"]
+// We want to output the messages in order.
+// The `messageOrder` array contains the true order of the messages.
+print("\nEXPECTED OUTPUT:")
+print("Hello!")
+print("Hey, how's it going?")
+print("Pretty good, just learning some Swift.")
+print("Good to hear. I'm learning Swift too!")
+print("Have to go now. Bye!")
+print("Goodbye!")
+// <-- [RUN HERE] See what the output should look like.
+
+// [3] Write a while loop which prints out the messages in order.
+//     Refer to the docs for tips & tricks.
+print("\n(WHILE) MESSAGES: ")
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] Check if your output matches the example.
+
+// [4] Do the same thing, but with a repeat-while loop
+print("\n(REPEAT-WHILE) MESSAGES: ")
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] Check if your output matches the example.
+
+// [5] Do the same thing, but with a for loop using default iterator
+print("\n(FOR ITERATOR) MESSAGES: ")
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] Check if your output matches the example.
+
+// [6] Do the same thing, but with a for loop using a range
+print("\n(FOR RANGE) MESSAGES: ")
+/* BEGIN CODE */
+
+/* END CODE */
+// <-- [RUN HERE] Check if your output matches the example.

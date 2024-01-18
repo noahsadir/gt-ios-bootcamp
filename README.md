@@ -2,9 +2,6 @@
 
 In this module, we'll go over collections, loops, functions and closures.
 
-Please note that this module is _not_ comprehensive. We'll only go over the
-basics here.
-
 Things you'll accomplish:
 - [ ] Create and manipulate Array objects
 - [ ] Create and manipulate Set objects
@@ -73,7 +70,6 @@ important, or when you need to ensure that an item only appears once.
 A dictionary is a mapping of keys to values. If you've used Maps in Java
 (e.g. HashMap), the concepts of a dictionary should be familar to you.
 
-
 ### Practice using Arrays
 
 In Xcode, navigate to Arrays playground page within MoreSwiftBasics.
@@ -126,7 +122,8 @@ Once you get to the practice section, do the following:
 4. Check if `optionalSet` contains "Giraffe". Remember that for optionals, you
    must unwrap the variable in some way before obtaining a value from it.
 
-_Hint:_ `optionalSet` should NOT contain "Giraffe". Think about why that is.
+_Hint:_ `optionalSet` should NOT contain "Giraffe" at this point.
+         Think about why that is.
    
 5. Initialize `optionalSet` with elements "Cow" and "Elephant"
 
@@ -166,9 +163,55 @@ sure to run the playground whenever you see a `[RUN HERE]` comment.
 
 Once you get to the practice section, do the following:
 
-```
-TODO: Add instructions
-```
+1. We have an empty array, `numArr`, that needs to be populated with multiples
+   of ten. Right now, the values are hardcoded but it *might* be better suited
+   for a loop.
+   
+   You can accomplish this using whichever type of loop you feel is best.
+   
+2. Now lets practice loops using a more real-world situation. We have a
+   dictionary with messages in a conversation. Each message has a 5-character
+   alphanumeric ID which acts as the key in the dictionary.
+   
+   Using a loop, print out the dictionary entries in the following format:
+   ```
+   a1b2c: Hello World!
+   ```
+   
+3. When printing the dictionary contents, you may notice that the messages seem
+   out of order. This is because dictionaries do not store items in a
+   predictable order (such as the order they were inserted).
+   
+   Luckily, we have an array `messageOrder` which stores the message IDs in the
+   order they were sent.
+   
+   Using a while loop, write code that prints out the values of `messages` in
+   order using the `messageOrder` array.
+   
+4. Do the same, but now try doing it with a repeat-while loop.
+
+5. Finally, do the same thing, but using a for loop that utilizes the built-in
+   iterator for a collection.
+   
+   Remember, the syntax for doing so looks something like this:
+   
+   ```
+   for someVal in someCollection
+   ```
+
+6. Finally, do the same thing, but using a for loop that utilizes a range.
+
+   Remember, for loops with ranges follow this syntax:
+   
+   ```
+   for someIntermediateInt in lowerBoundInt...upperBoundInt
+   ```
+   
+   or, alternatively:
+   
+   ```
+   for someIntermediateInt in lowerBoundInt..<upperBoundInt
+   ```
 
 #### What you've accomplished so far:
 
