@@ -49,6 +49,8 @@ print("(end repeat-while)")
 //                Why not?
 print("")
 
+// As you can see, repeat-while loops can be helpful for code that you want to
+// run at least once, even if the terminating condition is already met.
 
 
 
@@ -154,6 +156,7 @@ var messages: [String: String] = [
     "rlb2n": "Good to hear. I'm learning Swift too!",
     "b2vbc": "Pretty good, just learning some Swift."
 ]
+
 // [2] Print out each message ID and their contents.
 //     Reference the docs for the desired output format.
 print("\nMessage Data:")

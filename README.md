@@ -248,9 +248,35 @@ sure to run the playground whenever you see a `[RUN HERE]` comment.
 
 Once you get to the practice section, do the following:
 
+1. Use Swift's built-in `.sort(by:)` closure to sort the array by city name
+   lengths (shortest to largest).
+   
+   If you're having trouble, take a look back in the example from the Arrays
+   walkthrough.
+   
+   You can also look at the [Swift docs for .sort(by:)](https://developer.apple.com/documentation/swift/array/sort(by:))
+
+2. Let's say the sort method didn't exist. To get some practice with loops
+   and functions, let's try to implement a selection sort algorithm to sort
+   the array.
+   
+   Use the following pseudocode as reference:
+   
 ```
-TODO: Add instructions
+Int min = 0
+String temp = ""
+
+for i in 0 to (arr_length - 1):
+    min = i
+    for j in (i + 1) to arr_length:
+        if str_length(arr[j]) < str_length(arr[min]):
+            min = j
+    temp = arr[i]
+    arr[i] = arr[min]
+    arr[min] = temp
 ```
+
+3. It's important to stress that some types of closures may obscure 
 
 ## That's all!
 

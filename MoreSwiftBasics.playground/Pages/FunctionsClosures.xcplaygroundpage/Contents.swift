@@ -187,12 +187,28 @@ countAndNotify(until: 15, onFinish: { totalCount in
     print("Successfully counted until \(totalCount)")
 })
 // <-- [RUN HERE] Notice how 15 gets passed into the closure block.
+print("")
 
+print("Execute function that takes a while:")
 
+// It's important to keep in mind that some closures may complicate
+// the execution order.
+func somethingThatTakesAWhile(whenFinished: @escaping () -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        whenFinished()
+    }
+}
 
+print("1")
+somethingThatTakesAWhile(whenFinished: {
+    print("2")
+})
+print("3")
+// BEFORE RUNNING: What order will these statements print out?
+// <-- [RUN HERE] Does the output match what you expected?
+print("")
 
-
-print("*** FUNCTIONS & CLOSURES PRACTICE ***")
+print("*** FUNCTIONS & CLOSURES PRACTICE ***\n")
 // Now that you've explored how functions & closures work in Swift,
 // it's time to practice.
 // TODO: Refer to Module 2 docs to implement this part
@@ -201,3 +217,70 @@ print("*** FUNCTIONS & CLOSURES PRACTICE ***")
 // - Practice loops & collections w/ custom sort
 // - Use Swift's built in sort function
 // - Binary search?
+
+
+// You may remember that back in the Arrays section of this module,
+// you were shown a sort() method that let you specify your own sorting
+// criteria.
+
+// One common instance of closures is array sorting.
+// Arrays contain a built-in sort() method that lets you specify the
+// sorting criteria via a closure.
+
+var cities: [String] = ["Chicago", "New York", "Atlanta", "Boston", "San Francisco", "Seattle", "Los Angeles", "Miami", "Nashville"]
+var cities2: [String] = ["Chicago", "New York", "Atlanta", "Boston", "San Francisco", "Seattle", "Los Angeles", "Miami", "Nashville"]
+
+print("Original:       \(cities)\n")
+
+// By default, strings are sorted in alphabetical order:
+cities.sort()
+
+print("Alphabetical:   \(cities)\n")
+
+// <-- [RUN HERE] What if we weren't interested in alphabetical order?
+
+// [1] Use the .sort(by:) function to sort the array from shortest name to
+//     longest. Check the docs for reference material if needed
+/* BEGIN CODE */
+
+/* END CODE */
+print("Length (.sort): \(cities)")
+
+
+// [2] Now try sorting the array manually using selection sort.
+//     Use the pseudocode in the docs as reference.
+/*
+Int min = 0
+String temp = ""
+
+for i in 0 to (arr_length - 1):
+ min = i
+ for j in (i + 1) to arr_length:
+    if str_length(arr[j]) < str_length(arr[min]):
+        min = j
+ temp = arr[i]
+ arr[i] = arr[min]
+ arr[min] = temp
+*/
+func selectionSort(_ input: [String]) -> [String] {
+    var arr: [String] = input
+    /* BEGIN CODE */
+    var min: Int = 0
+    var temp: String = ""
+    
+    for i in 0..<(arr.count - 1) {
+        min = i
+        for j in (i + 1)..<arr.count {
+            if arr[j].count < arr[min].count {
+                min = j
+            }
+        }
+        temp = arr[i]
+        arr[i] = arr[min]
+        arr[min] = temp
+    }
+    /* END CODE */
+    return arr
+}
+cities2 = selectionSort(cities2)
+print("Length (sel):   \(cities2)")
