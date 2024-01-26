@@ -24,10 +24,7 @@ class CarCatalog {
      TODO: write an initializer that fetches all the car models. For the purposes of this assignment, initialize carsAvailable to a default array of 5-6 car models. Make sure the displayedCars are initialized with all the cars in carsAvailable. Upon launch, the user should have no favourites.
     */
     init() {
-        // SOLUTION
-        self.carsAvailable = [CarModel(id: "M497") : 2, CarModel(id: "M667") : 1, CarModel(id: "M001") : 0, CarModel(id: "M221") : 2]
-        self.favourites = []
-        self.displayedCars = Array(self.carsAvailable.keys)
+
     }
     
     
@@ -37,12 +34,7 @@ class CarCatalog {
      */
     func toggleFavourite(car: CarModel) {
         
-        // SOLUTION
-        if favourites.contains(where: {$0  == car}) {
-            favourites.removeAll(where: {$0 == car})
-        } else {
-            favourites.append(car)
-        }
+ 
     }
     
     /*
@@ -51,12 +43,7 @@ class CarCatalog {
      */
     func getCarAvailability(car: CarModel) -> Int {
         
-        // SOLUTION
-        if let availability = carsAvailable[car] {
-            return availability
-        } else {
-            return 0
-        }
+
     }
     
     /*
@@ -64,12 +51,7 @@ class CarCatalog {
         Set the displayedCars to all the available cars excluding any car that IS NOT of the given brand. In essence, this is the filtering functionality our app uses to display cars of a certain brand.
      */
     func filterCarsBy(brand: CarBrand) {
-        
-        // SOLUTION
-        displayedCars = carsAvailable.keys.filter({ car in
-            car.getBrandName() == brand.rawValue
-        })
-        
+
     }
     
     
