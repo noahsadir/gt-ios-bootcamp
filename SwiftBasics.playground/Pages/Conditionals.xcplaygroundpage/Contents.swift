@@ -10,7 +10,7 @@ import Foundation
  - To see the print results of the execution (when doing it as above), open the console by clicking on the rectangular-ish icon on the bottom right of the screen.
  */
 
-// CHALLENGE 1: Gary has a smart alarm system which reads a message (alarmMessage) depending on whether he's awake (represented by isAwake). If Gary is awake, set the alarm message to "Good morning Gary!", otherwise set it to "Wake up Gary!". Recreate such a conditional check using if-else, ternary statements, and a guard statement.
+// CHALLENGE 1: Gary has a smart alarm system which reads a message (alarmMessage) depending on whether he's awake (represented by isAwake). If Gary is awake, set the alarm message to "Good morning Gary!", otherwise set it to "Wake up Gary!". Recreate such a conditional check using if-else, ternary statements, and a guard statement (inside the else block, instead of `return` perform `fatalError()`).
 let isAwake: Bool = true
 var alarmMessage: String
 // [start here]
