@@ -21,7 +21,7 @@ import Foundation
         - “force unwrap”
         - "nil coalescing"
  
-    Use fatalError() inside the 'else block' of your "guard let".
+    Use fatalError() inside the 'else block' of your "guard let", so that Xcode doesn't complain.
  */
 var myPostCode: String? = "30332"
 var myAddress: String = "North Avenue, GT, "
@@ -31,7 +31,7 @@ var myAddress: String = "North Avenue, GT, "
         - “guard let”
         - ternary operator
 
-    Use fatalError() inside the 'else block' of your "guard let".
+    Use fatalError() inside the 'else block' of your "guard let", so that Xcode doesn't complain.
  */
 var myRank: Int? = nil
 var endOfGameSummary: String = "None"
@@ -60,4 +60,4 @@ var cookingMode: String? = nil
 let myString: String? = "iOS Club"
 var length: Int = -1
 
-// <- [CLICK HERE TO RUN ME], the console should not display an error after running.
+// <- [CLICK HERE TO RUN ME], don't worry if you get an error. It's probably because of the `fatalError()` call we told you to make.
